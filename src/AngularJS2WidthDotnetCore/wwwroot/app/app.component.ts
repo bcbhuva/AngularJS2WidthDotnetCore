@@ -2,7 +2,7 @@
 
 @Component({
     selector: 'my-app',
-    template: `<h1>My app AngularJs 2</h1>`,
+    templateUrl:'./app/app.component.html' ,
 })
 export class AppComponent {
 }

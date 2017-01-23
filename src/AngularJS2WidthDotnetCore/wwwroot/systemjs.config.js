@@ -25,7 +25,13 @@
             // other libraries
             'rxjs': 'npm:rxjs',
             'hammerjs': 'npm:hammerjs',
-            'angular-in-memory-web-api': 'npm:angular-in-memory-web-api'
+            'angular-in-memory-web-api': 'npm:angular-in-memory-web-api',
+            //Devetreme lib
+            'devextreme': 'npm:devextreme',
+            'jquery': 'npm:jquery/dist/jquery.min.js',
+            'jszip': 'npm:jszip/dist/jszip.min.js',
+            'devextreme': 'npm:devextreme',
+            'devextreme-angular': 'npm:devextreme-angular',
         },
         // packages tells the System loader how to load when no filename and/or no extension
         packages: {
@@ -41,6 +47,13 @@
             },
             'angular-in-memory-web-api': {
                 main: './index.js',
+                defaultExtension: 'js'
+            },
+            'devextreme': {
+                defaultExtension: 'js'
+            },
+            'devextreme-angular': {
+                main: 'index.js',
                 defaultExtension: 'js'
             }
         }

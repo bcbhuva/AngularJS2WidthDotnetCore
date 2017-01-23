@@ -49,6 +49,30 @@ gulp.task('restore:bootstrap', function () {
     ]).pipe(gulp.dest(libs + 'bootstrap'));
 });
 
+gulp.task('restore:devextreme', function () {
+    gulp.src([
+        'node_modules/devextreme/**/*.*'
+    ]).pipe(gulp.dest(libs + 'devextreme'));
+});
+
+gulp.task('restore:devextreme-angular', function () {
+    gulp.src([
+        'node_modules/devextreme-angular/**/*.*'
+    ]).pipe(gulp.dest(libs + 'devextreme-angular'));
+});
+
+gulp.task('restore:jquery', function () {
+    gulp.src([
+        'node_modules/jquery/**/*.*'
+    ]).pipe(gulp.dest(libs + 'jquery'));
+});
+
+gulp.task('restore:jszip', function () {
+    gulp.src([
+        'node_modules/jszip/**/*.*'
+    ]).pipe(gulp.dest(libs + 'jszip'));
+});
+
 gulp.task('restore', [
     'restore:core-js',
     'restore:zone.js',
@@ -57,5 +81,9 @@ gulp.task('restore', [
     'restore:rxjs',
     'restore:angular-in-memory-web-api',
     'restore:angular',
-    'restore:bootstrap'
+    'restore:bootstrap',
+    'restore:devextreme-angular',
+    'restore:devextreme',
+    'restore:jquery',
+    'restore:jszip',
 ]);
